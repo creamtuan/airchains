@@ -1,18 +1,22 @@
-# Download binary
+**Download binary**
+```
 cd $HOME && mkdir -p go/bin/
 wget https://github.com/airchains-network/junction/releases/download/v0.1.0/junctiond
 chmod +x junctiond
 mv junctiond $HOME/go/bin/
+```
 
-
-# Set node CLI configuration
+**Set node CLI configuration**
+```
 junctiond config set client chain-id junction
 junctiond config set client keyring-backend test
 junctiond config set client node tcp://localhost:26657
+```
 
-# Initialize the node
+**Initialize the node**
+```
 junctiond init "Your Node Name" --chain-id junction
-
+```
 # Download genesis and addrbook files
 curl -L https://snapshots-testnet.nodejumper.io/airchains-testnet/genesis.json > $HOME/.junction/config/genesis.json
 curl -L https://snapshots-testnet.nodejumper.io/airchains-testnet/addrbook.json > $HOME/.junction/config/addrbook.json
