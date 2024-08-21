@@ -67,6 +67,8 @@ sudo systemctl daemon-reload
 sudo systemctl enable junctiond.service
 ```
 
-# Start the service and check the logs
+**Start the service and check the logs**
+```
 sudo systemctl start junctiond.service
 sudo journalctl -u junctiond.service -f --no-hostname -o cat
+```
