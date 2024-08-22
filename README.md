@@ -19,8 +19,8 @@ junctiond init "Your Node Name" --chain-id junction
 ```
 **Download genesis and addrbook files**
 ```
-curl -L https://snapshots-testnet.nodejumper.io/airchains-testnet/genesis.json > $HOME/.junction/config/genesis.json
-curl -L https://snapshots-testnet.nodejumper.io/airchains-testnet/addrbook.json > $HOME/.junction/config/addrbook.json
+curl -L https://raw.githubusercontent.com/ompini/airchains/main/genesis.json > $HOME/.junction/config/genesis.json
+curl -L https://raw.githubusercontent.com/ompini/airchains/main/addrbook.json > $HOME/.junction/config/addrbook.json
 ```
 
 **Set seeds**
